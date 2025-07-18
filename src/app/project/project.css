@@ -1,0 +1,29 @@
+.container main {
+    flex: 3;
+    background-color: #ffffff;
+    padding: 0 10px;
+    text-align: justify;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    margin: 10px;
+}
+
+table {
+    width: calc(100% - 20px);
+    margin: 10px;
+    border-collapse: collapse;
+    text-align: left; 
+    box-sizing: border-box;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 12px 15px; 
+    word-wrap: break-word; 
+}
+
+th {
+    background-color: #f2f2f2fb; 
+}

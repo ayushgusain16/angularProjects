@@ -1,0 +1,14 @@
+.info input, textarea {
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.button {
+    width: 100%;
+    font-size: x-large;
+    background-color: rgb(40, 37, 37);
+    color: #ffffff;
+    margin: 10px 0;
+}
