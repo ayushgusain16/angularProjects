@@ -1,20 +1,15 @@
 <section>
-    <h3 id="projects">Projects</h3>
-    <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-            <th>Tech Stack</th>
-        </tr>
-        <tr>
-            <td>Portfolio Site</td>
-            <td>Personal Website to showcase my work</td>
-            <td>HTML, CSS</td>
-        </tr>
-        <tr>
-            <td>Todo App</td>
-            <td>Simple task management app</td>
-            <td>Python, FastApi, Sqlite, Pytest, HTML, CSS, JS</td>
-        </tr>
-    </table>
+  <h3 id="projects">Projects</h3>
+  <table>
+    <tr>
+      <th>Project</th>
+      <th>Description</th>
+      <th>Tech Stack</th>
+    </tr>
+    <tr *ngFor="let project of projects">
+      <td>{{ project.name }}</td>
+      <td>{{ project.description }}</td>
+      <td>{{ project.techStack }}</td>
+    </tr>
+  </table>
 </section>
