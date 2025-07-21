@@ -10,15 +10,9 @@ import { DataService } from '../services/data.service';
   styleUrl: './project.css'
 })
 export class Project {
-
   projects: any[] = [];
 
   constructor(private dataService: DataService) {
     this.projects = this.dataService.getProjects();
   }
-
-  ngOnInit() {
-    console.log(this.projects);
-  }
-
 }
