@@ -1,14 +1,115 @@
-.info input, textarea {
-    margin-top: 5px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
+/* Contact Me Section Styles */
+
+#contact {
+  margin: 0 0 20px;
+}
+
+.contact-me-container {
+  max-width: 700px;
+  margin: 48px auto;
+  padding: 25px 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+.contact-me-container h2,
+.contact-me-container h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+.info input,
+.info textarea {
+  margin-top: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fafafa;
+  transition: border-color 0.2s;
+}
+
+.info input:focus,
+.info textarea:focus {
+  border-color: #888;
+  outline: none;
 }
 
 .button {
-    width: 100%;
-    font-size: x-large;
-    background-color: rgb(40, 37, 37);
-    color: #ffffff;
-    margin: 10px 0;
+  width: 100%;
+  font-size: 1.1rem;
+  background-color: #282525;
+  color: #fff;
+  margin: 18px 0 0 0;
+  padding: 12px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #444;
+  color: #fff;
+}
+
+.contact-me-container label {
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.contact-me-container strong {
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 18px;
+  font-weight: bold;
+  font-size: 1.15rem;
+  color: #222;
+}
+
+/* Align checkboxes and radio buttons with their labels */
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-left: 2px;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+/* Group checkboxes/radios for better spacing and vertical stacking */
+.checkbox-group,
+.radio-group {
+  margin-bottom: 16px;
+}
+
+.checkbox-group > div,
+.radio-group > div {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 600px) {
+  .contact-me-container {
+    padding: 16px 8px;
+  }
+  .contact-me-container h2,
+  .contact-me-container h3 {
+    font-size: 1.4rem;
+  }
+  .contact-me-container strong {
+    font-size: 1rem;
+  }
 }
